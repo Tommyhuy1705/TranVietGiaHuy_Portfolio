@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/TranVietGiaHuy_Portfolio/precache-manifest.7e2a0bcc7800d0e83b4d04f4b36704fe.js"
+  "/TranVietGiaHuy_Portfolio/precache-manifest.5721bcb179001e50ab8cd6f7b0f7265e.js"
 );
 
 self.addEventListener('message', (event) => {

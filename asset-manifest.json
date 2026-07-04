@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/TranVietGiaHuy_Portfolio/static/css/main.b0af3123.chunk.css",
-    "main.js": "/TranVietGiaHuy_Portfolio/static/js/main.1623adc8.chunk.js",
-    "main.js.map": "/TranVietGiaHuy_Portfolio/static/js/main.1623adc8.chunk.js.map",
+    "main.js": "/TranVietGiaHuy_Portfolio/static/js/main.f9d01c7c.chunk.js",
+    "main.js.map": "/TranVietGiaHuy_Portfolio/static/js/main.f9d01c7c.chunk.js.map",
     "runtime-main.js": "/TranVietGiaHuy_Portfolio/static/js/runtime-main.1df87b63.js",
     "runtime-main.js.map": "/TranVietGiaHuy_Portfolio/static/js/runtime-main.1df87b63.js.map",
     "static/js/2.916a4440.chunk.js": "/TranVietGiaHuy_Portfolio/static/js/2.916a4440.chunk.js",
     "static/js/2.916a4440.chunk.js.map": "/TranVietGiaHuy_Portfolio/static/js/2.916a4440.chunk.js.map",
     "index.html": "/TranVietGiaHuy_Portfolio/index.html",
-    "precache-manifest.7e2a0bcc7800d0e83b4d04f4b36704fe.js": "/TranVietGiaHuy_Portfolio/precache-manifest.7e2a0bcc7800d0e83b4d04f4b36704fe.js",
+    "precache-manifest.5721bcb179001e50ab8cd6f7b0f7265e.js": "/TranVietGiaHuy_Portfolio/precache-manifest.5721bcb179001e50ab8cd6f7b0f7265e.js",
     "service-worker.js": "/TranVietGiaHuy_Portfolio/service-worker.js",
     "static/css/main.b0af3123.chunk.css.map": "/TranVietGiaHuy_Portfolio/static/css/main.b0af3123.chunk.css.map",
     "static/media/index.css": "/TranVietGiaHuy_Portfolio/static/media/Montserrat-Regular.ee653992.ttf"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.1df87b63.js",
     "static/js/2.916a4440.chunk.js",
     "static/css/main.b0af3123.chunk.css",
-    "static/js/main.1623adc8.chunk.js"
+    "static/js/main.f9d01c7c.chunk.js"
   ]
 }

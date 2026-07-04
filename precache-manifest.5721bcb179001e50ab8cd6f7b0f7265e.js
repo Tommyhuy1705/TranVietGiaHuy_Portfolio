@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "46ddca928e23d3d878d703dcd5055604",
+    "revision": "de58b6d2cbbdcbbd8b36e0402ade09e7",
     "url": "/TranVietGiaHuy_Portfolio/index.html"
   },
   {
-    "revision": "1404c2c4c4b477f067d4",
+    "revision": "203b964e32c6a58bb11d",
     "url": "/TranVietGiaHuy_Portfolio/static/css/main.b0af3123.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TranVietGiaHuy_Portfolio/static/js/2.916a4440.chunk.js"
   },
   {
-    "revision": "1404c2c4c4b477f067d4",
-    "url": "/TranVietGiaHuy_Portfolio/static/js/main.1623adc8.chunk.js"
+    "revision": "203b964e32c6a58bb11d",
+    "url": "/TranVietGiaHuy_Portfolio/static/js/main.f9d01c7c.chunk.js"
   },
   {
     "revision": "9f2afc13c05c2d272b3c",
