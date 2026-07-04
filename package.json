@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Tran Viet Gia Huy - Data Analyst Portfolio",
   "author": "Tran Viet Gia Huy",
-  "homepage": "/",
+  "homepage": "https://tommyhuy1705.github.io/TranVietGiaHuy_Portfolio",
   "scripts": {
     "build": "react-scripts --openssl-legacy-provider build",
     "predeploy": "npm run build",

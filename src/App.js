@@ -18,6 +18,8 @@ import {
   skills,
 } from "./data/portfolioData";
 
+const appBase = process.env.PUBLIC_URL || "";
+
 function useScrollProgress() {
   const [progress, setProgress] = useState(0);
 
@@ -116,11 +118,11 @@ function Header({ theme, onThemeToggle }) {
           {profile.initials}.
         </Link>
         <nav className="nav-links" aria-label="Primary navigation">
-          <a href="/#">Home</a>
-          <a href="/#about">About</a>
-          <a href="/#skills">Skills</a>
-          <a href="/#projects">Projects</a>
-          <a href="/#experience">Experience</a>
+          <a href={`${appBase}/#`}>Home</a>
+          <a href={`${appBase}/#about`}>About</a>
+          <a href={`${appBase}/#skills`}>Skills</a>
+          <a href={`${appBase}/#projects`}>Projects</a>
+          <a href={`${appBase}/#experience`}>Experience</a>
         </nav>
         <div className="nav-actions">
           <ThemeToggle theme={theme} onToggle={onThemeToggle} />
@@ -1009,7 +1011,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter basename={appBase || "/"}>
       <div className="app-shell">
         <Header theme={theme} onThemeToggle={toggleTheme} />
         <Switch>
