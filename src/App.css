@@ -24,7 +24,7 @@
   --warning: #f7c948;
   --shadow: 0 18px 54px rgba(0, 0, 0, 0.34);
   --radius: 10px;
-  --max: 1080px;
+  --max: 1160px;
 }
 
 :root[data-theme="light"] {
@@ -345,13 +345,15 @@ textarea {
   position: relative;
   display: grid;
   min-height: 100vh;
-  width: min(calc(100% - 40px), 1220px);
-  grid-template-columns: minmax(0, 1fr) 430px;
-  grid-template-rows: 1fr auto;
-  gap: 54px;
+  min-height: 100svh;
+  width: min(calc(100% - 56px), 1360px);
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 360px);
+  grid-template-rows: auto auto;
+  gap: 54px 86px;
   align-items: center;
+  align-content: center;
   margin: 0 auto;
-  padding: 116px 0 78px;
+  padding: 92px 0 146px;
 }
 
 .hero-copy {
@@ -387,8 +389,8 @@ textarea {
 .project-hero h1 {
   margin: 16px 0 10px;
   font-family: Sora, sans-serif;
-  font-size: clamp(3rem, 6.4vw, 5.7rem);
-  line-height: 0.95;
+  font-size: clamp(3rem, 5.2vw, 4.85rem);
+  line-height: 0.98;
   letter-spacing: 0;
 }
 
@@ -400,7 +402,7 @@ textarea {
   margin: -2px 0 14px;
   color: #b8bfd1;
   font-family: Sora, sans-serif;
-  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  font-size: clamp(1.15rem, 1.45vw, 1.45rem);
   font-weight: 700;
 }
 
@@ -413,7 +415,7 @@ textarea {
 .hero-role {
   margin: 0;
   color: #b8bfd1;
-  font-size: clamp(1rem, 1.7vw, 1.22rem);
+  font-size: clamp(0.98rem, 1.25vw, 1.12rem);
   font-weight: 700;
 }
 
@@ -462,23 +464,23 @@ textarea {
 }
 
 .hero-actions {
-  margin-top: 26px;
+  margin-top: 24px;
 }
 
 .primary-button,
 .secondary-button {
   position: relative;
   display: inline-flex;
-  min-height: 42px;
+  min-height: 40px;
   align-items: center;
   justify-content: center;
   gap: 9px;
   overflow: hidden;
   border: 1px solid transparent;
   border-radius: 999px;
-  font-size: 0.9rem;
+  font-size: 0.86rem;
   font-weight: 800;
-  padding: 0 22px;
+  padding: 0 21px;
   transition: transform 180ms ease, box-shadow 180ms ease, border 180ms ease;
 }
 
@@ -526,14 +528,14 @@ textarea {
 }
 
 .social-row {
-  margin-top: 22px;
+  margin-top: 20px;
 }
 
 .social-row a,
 .footer-links a {
   display: inline-flex;
-  width: 36px;
-  height: 36px;
+  width: 34px;
+  height: 34px;
   align-items: center;
   justify-content: center;
   border: 1px solid var(--border);
@@ -566,8 +568,8 @@ textarea {
 .hero-portrait {
   position: relative;
   display: grid;
-  width: 430px;
-  height: 430px;
+  width: 360px;
+  height: 360px;
   place-items: center;
   justify-self: end;
 }
@@ -580,8 +582,8 @@ textarea {
 }
 
 .portrait-ring {
-  width: 330px;
-  height: 330px;
+  width: 306px;
+  height: 306px;
   border: 2px solid rgba(111, 125, 255, 0.55);
   background: radial-gradient(
     circle,
@@ -592,8 +594,8 @@ textarea {
 }
 
 .portrait-core {
-  width: 292px;
-  height: 292px;
+  width: 270px;
+  height: 270px;
   color: var(--text);
   overflow: hidden;
   background: linear-gradient(145deg, #1a1d2b, #0f1119);
@@ -614,13 +616,13 @@ textarea {
 }
 
 .portrait-orbit-a {
-  width: 380px;
-  height: 380px;
+  width: 334px;
+  height: 334px;
 }
 
 .portrait-orbit-b {
-  width: 430px;
-  height: 430px;
+  width: 360px;
+  height: 360px;
   border-color: rgba(111, 125, 255, 0.12);
 }
 
@@ -629,7 +631,7 @@ textarea {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
-  width: min(760px, 100%);
+  width: min(720px, 100%);
   margin: 0 auto;
 }
 
@@ -645,28 +647,55 @@ textarea {
   display: block;
   color: var(--primary);
   font-family: Sora, sans-serif;
-  font-size: clamp(1.2rem, 3vw, 1.7rem);
+  font-size: clamp(1.12rem, 2.2vw, 1.48rem);
 }
 
 .stat span {
   display: block;
-  margin-top: 7px;
+  margin-top: 6px;
   color: #8f9ab6;
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.62rem;
+  font-size: 0.56rem;
   font-weight: 500;
   text-transform: uppercase;
 }
 
 .scroll-cue {
   position: absolute;
-  bottom: 34px;
+  bottom: 76px;
   left: 50%;
   color: #6f7891;
   font-family: "JetBrains Mono", monospace;
   font-size: 0.58rem;
+  letter-spacing: 0.28em;
   text-transform: uppercase;
   transform: translateX(-50%);
+}
+
+.scroll-cue::after {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  width: 1px;
+  height: 34px;
+  content: "";
+  transform: translateX(-50%);
+  background: linear-gradient(180deg, var(--primary), rgba(111, 125, 255, 0));
+  animation: scroll-line 1.55s ease-in-out infinite;
+}
+
+@keyframes scroll-line {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: translateX(-50%) scaleY(0.55);
+    transform-origin: top;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateX(-50%) scaleY(1);
+  }
 }
 
 .section {
@@ -1721,36 +1750,36 @@ h3 {
 
   .hero-section {
     grid-template-columns: 1fr;
-    gap: 20px;
-    padding-top: 94px;
+    gap: 16px;
+    padding: 84px 0 94px;
     text-align: center;
   }
 
   .hero-portrait {
     grid-row: 1;
     justify-self: center;
-    width: 260px;
-    height: 260px;
+    width: 230px;
+    height: 230px;
   }
 
   .portrait-ring {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
 
   .portrait-core {
-    width: 172px;
-    height: 172px;
+    width: 154px;
+    height: 154px;
   }
 
   .portrait-orbit-a {
-    width: 232px;
-    height: 232px;
+    width: 206px;
+    height: 206px;
   }
 
   .portrait-orbit-b {
-    width: 260px;
-    height: 260px;
+    width: 230px;
+    height: 230px;
   }
 
   .hero-copy h1 {
@@ -1772,8 +1801,12 @@ h3 {
   }
 
   .hero-stats .stat:nth-child(n + 3) {
-    padding-top: 18px;
+    padding-top: 14px;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .scroll-cue {
+    bottom: 78px;
   }
 
   .detail-metrics .stat:nth-child(odd) {
@@ -1841,7 +1874,7 @@ h3 {
 
   .hero-copy h1,
   .project-hero h1 {
-    font-size: 2.75rem;
+    font-size: 2.48rem;
   }
 
   .section {
