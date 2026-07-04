@@ -1,3 +1,6 @@
+const publicUrl = process.env.PUBLIC_URL || "";
+const asset = (path) => `${publicUrl}${path}`;
+
 export const profile = {
   name: "Tran Viet Gia Huy",
   initials: "TH",
@@ -8,8 +11,8 @@ export const profile = {
   email: "giahuytranviet.work@gmail.com",
   linkedin: "https://www.linkedin.com/in/giahuytranviet",
   github: "https://github.com/Tommyhuy1705",
-  photo: "/profile-photo.jpg",
-  resume: "/TranVietGiaHuy_Resume.pdf",
+  photo: asset("/profile-photo.jpg"),
+  resume: asset("/TranVietGiaHuy_Resume.pdf"),
   tagline:
     "Turning complex business data into decision systems with SQL, Python, BI dashboards, and AI-assisted analytics.",
   rotating: [
@@ -316,10 +319,10 @@ export const projects = [
       "Processed multi-source e-commerce data, built Power BI dashboards, and added a Python + Excel ROI financial engine to convert operational insights into budget decisions.",
     repo:
       "https://github.com/Tommyhuy1705/E-Commerce_Data-Driven_Optimization_and_Profitability_Pipeline.git",
-    image: "/project-assets/ecommerce-executive-overview.png",
+    image: asset("/project-assets/ecommerce-executive-overview.png"),
     gallery: [
-      "/project-assets/ecommerce-executive-overview.png",
-      "/project-assets/ecommerce-forecast.png",
+      asset("/project-assets/ecommerce-executive-overview.png"),
+      asset("/project-assets/ecommerce-forecast.png"),
     ],
     tags: ["Python", "Power BI", "Machine Learning", "ROI Modeling", "Pandas"],
     roles: ["Business Data Analyst"],
@@ -400,11 +403,11 @@ export const projects = [
       "Built a multi-page dashboard and data model from orders, customers, products, payment, and shipping tables to diagnose cancellation, retention, and product performance.",
     repo:
       "https://github.com/Tommyhuy1705/Office_Furniture_E-Commerce_Analysis.git",
-    image: "/project-assets/office-overview.png",
+    image: asset("/project-assets/office-overview.png"),
     gallery: [
-      "/project-assets/office-overview.png",
-      "/project-assets/office-customer.png",
-      "/project-assets/office-product.png",
+      asset("/project-assets/office-overview.png"),
+      asset("/project-assets/office-customer.png"),
+      asset("/project-assets/office-product.png"),
     ],
     tags: ["Power BI", "DAX", "Data Modeling", "Python", "SQL"],
     roles: ["Business Data Analyst"],
@@ -476,11 +479,11 @@ export const projects = [
     description:
       "Designed a Bronze-Silver-Gold warehouse, implemented ETL scripts, documented data catalog and naming conventions, and modeled a Gold layer for analytics.",
     repo: "https://github.com/Tommyhuy1705/SQL_Data_Warehouse_Project.git",
-    image: "/project-assets/warehouse-data-flow.png",
+    image: asset("/project-assets/warehouse-data-flow.png"),
     gallery: [
-      "/project-assets/warehouse-data-flow.png",
-      "/project-assets/warehouse-data-model.png",
-      "/project-assets/warehouse-integration.png",
+      asset("/project-assets/warehouse-data-flow.png"),
+      asset("/project-assets/warehouse-data-model.png"),
+      asset("/project-assets/warehouse-integration.png"),
     ],
     tags: ["SQL Server", "ETL", "Data Modeling", "Star Schema", "Medallion"],
     roles: ["Data Engineering"],
